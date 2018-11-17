@@ -1,0 +1,27 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        window.onload = function () {
+            var ua = navigator.userAgent.toLowerCase();
+            var uMobile = '';
+            uMobile = '';
+            uMobile += 'iphone;ipod;windows phone;android;iemobile 8';
+            v_uMobile = uMobile.split(';');
+            var boolMovel = false;
+            for (i = 0; i <= v_uMobile.length; i++) {
+                if (ua.indexOf(v_uMobile[i]) != -1) {
+                    boolMovel = true;
+                }
+            }
+            if (boolMovel == true) {
+                location.href = '/index-mobile';
+            } else {
+                location.href = '/index';
+            }
+        }
+    </script>
+</head>
+
+</html>

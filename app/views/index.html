@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>1º SERCOMP - UEPB</title>
+    <meta name="keywords" content="Computação, Inovação, Pesquisa em Computação, Computação contextualizada, Congresso, Paraiba, Patos-PB" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var ua = navigator.userAgent.toLowerCase();
+            var uMobile = '';
+            // === REDIRECIONAMENTO PARA iPhone, Windows Phone, Android, etc. ===
+            // Lista de substrings a procurar para ser identificado como mobile WAP
+            uMobile = '';
+            uMobile += 'iphone;ipod;windows phone;android;iemobile 8';
+            // Sapara os itens individualmente em um array
+            v_uMobile = uMobile.split(';');
+            // percorre todos os itens verificando se eh mobile
+            var boolMovel = false;
+            for (i = 0; i <= v_uMobile.length; i++) {
+                if (ua.indexOf(v_uMobile[i]) != -1) {
+                    boolMovel = true;
+                }
+            }
+            if (boolMovel == true) {
+                location.href = '/index-mobile';
+            }
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92283889-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92283889-4');
+    </script>
+</head>
+
+<body>
+
+    <!--NAVEGADOR-->
+    <div class="fixed-top couro">
+        <nav class="nav float-left pl-5 pt-4 w-75 navegacao">
+            <span><img src="img/simbolo.png" height="60px"></span>
+            <li class="nav-item">
+                <a class="nav-link active text-light" href="#inicio">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/home.svg">
+                    Inicio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#programacao">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/programacao.svg">
+                    Programação
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/inscricao-evento">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/inscreverse.svg">
+                    Inscrição
+                </a>
+            </li><li>
+            <a class="nav-link text-light" href="/chamada-trabalhos">
+                <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/anexar.svg">
+                Submissão
+            </a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/hackton">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/hackday.svg">
+                    Hackday
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#contato">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/support.svg">
+                    Local e Contatos
+                </a>
+            </li>
+        </nav>
+        <div class="float-right pr-5 pt-4 w-25 navegacao ">
+            <div class="float-right">
+                <!--<span class="ml-3"><a href=""><img src="img/facebook.svg" style="filter: invert(100%)" height="20"></a></span>-->
+                <span class="ml-3"><a href="https://www.instagram.com/sercomppb/"><img src="img/instagram.svg" style="filter: invert(100%)"
+                            height="20"></a></span>
+                <span class="ml-3"><a href="mailto:sercompeupb@gmail.com?Subject=Enviado%20do%20site" style="filter: invert(100%)"
+                        height="20"><img src="img/email.svg"></a></span>
+            </div>
+        </div>
+    </div>
+    <!--Conteudo-->
+    <div id="conteudo" style="padding-top: 100px">
+
+
+        <!--INICIO-->
+        <section class="pr-5 pl-5" id="inicio">
+            <div class="container pt-5 pb-5 text-center">
+                <span><img class="mb-2" src="img/logo.png" width="650px"></span>
+                <p class="lead text-muted">Dias 21 a 23 de novembro na UEPB campus VII - Patos</p>
+                <div class="pt-3 pb-5">
+                    <a href="/inscricao-evento" class="btn btn-lg couro text-light mr-2"><img src="img/inscreverse.svg"
+                            class="img-fluid mr-2" style="filter: invert(100%)"><strong>Inscrever-me</strong></a>
+
+                    <a href="/hackton" class="btn btn-lg  couro text-light mr-0"><img src="img/hackday.svg" class="img-fluid mr-2"
+                            style="filter: invert(100%)"><strong>Hackday</strong></a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--EVENTO-->
+        <section class="pr-5 pl-5 couro">
+            <div class="row justify-content-center">
+                <!-- Noticias -->
+                <div class="container pt-5 pb-5 text-left w-auto m-1 animacao" id="novidades">
+                    <div class="tittle-header">
+                        <h2><strong>Tema</strong></h2>
+                    </div>
+                    <div class="pr-5 pl-5 text-light">
+                        <h4><strong>Tecnologia e inovação para o sertão paraibano</strong></h4>
+                        <p>O “I SERCOMP – Congresso Sertanejo de Computação - “Tecnologia e inovação para o sertão
+                            paraibano” surge
+                            com o objetivo de colocar em prática soluções computacionais em relação aos problemas
+                            enfrentados pela
+                            população local, como: seca, saneamento básico e entre outros problemas. </p>
+                        <p>
+                            A proposta é reunir estudantes de graduação e curso técnico, professores e pesquisadores
+                            interessados em
+                            desenvolver aplicações tecnológicas para o sertão paraibano, com minicursos, palestras,
+                            Hackday e apresentação de trabalhos científicos.
+                        </p>
+                    </div>
+                </div>
+                <!-- PALESTRANTES -->
+                <!--<div class="container animacao2">
+                    <div class="row justify-content-center pt-3 pb-3 text-left w-auto m-1">
+                        <div class="tittle-header">
+                            <h2><strong>Palestrantes</strong></h2>
+                        </div>
+
+                        <div class="text-center card-prof">
+                            <img class="rounded-circle foto-professor m-2  image-responsiva" src="img/professor.jpg"
+                                alt="Generic placeholder image">
+                            <div class="p-2">
+                                <h6><strong>Francisco Jorge</strong></h6>
+                                <p style="line-height: 1.2;font-size: 0.6">Formado em Física pela
+                                    Universidade Estadual da Paraiba - UEPB</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center card-prof">
+                            <img class="rounded-circle foto-professor m-2  image-responsiva" src="img/professor.jpg"
+                                alt="Generic placeholder image">
+                            <div class="p-2">
+                                <h6><strong>Francisco Jorge</strong></h6>
+                                <p style="line-height: 1.2;font-size: 0.6">Formado em Física pela
+                                    Universidade Estadual da Paraiba - UEPB</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center card-prof">
+                            <img class="rounded-circle foto-professor m-2  image-responsiva" src="img/professor.jpg"
+                                alt="Generic placeholder image">
+                            <div class="p-2">
+                                <h6><strong>Francisco Jorge</strong></h6>
+                                <p style="line-height: 1.2;font-size: 0.6">Formado em Física pela
+                                    Universidade Estadual da Paraiba - UEPB</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center card-prof">
+                            <img class="rounded-circle foto-professor m-2  image-responsiva" src="img/professor.jpg"
+                                alt="Generic placeholder image">
+                            <div class="p-2">
+                                <h6><strong>Francisco Jorge</strong></h6>
+                                <p style="line-height: 1.2;font-size: 0.6">Formado em Física pela
+                                    Universidade Estadual da Paraiba - UEPB</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center card-prof">
+                            <img class="rounded-circle foto-professor m-2  image-responsiva" src="img/professor.jpg"
+                                alt="Generic placeholder image">
+                            <div class="p-2">
+                                <h6><strong>Francisco Jorge</strong></h6>
+                                <p style="line-height: 1.2;font-size: 0.6">Formado em Física pela
+                                    Universidade Estadual da Paraiba - UEPB</p>
+                            </div>
+                        </div>
+                        <div class="text-center card-prof">
+                            <img class="rounded-circle foto-professor m-2  image-responsiva" src="img/professor.jpg"
+                                alt="Generic placeholder image">
+                            <div class="p-2">
+                                <h6><strong>Francisco Jorge</strong></h6>
+                                <p style="line-height: 1.2;font-size: 0.6">Formado em Física pela
+                                    Universidade Estadual da Paraiba - UEPB</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>-->
+            </div>
+
+
+
+        </section>
+
+        <!--Minicursos e oficinas-->
+        <!-- <section class="pr-5 pl-5" id="minicursos" style="height: 500px; background-color:darkblue">
+
+        </section>-->
+
+        <section class="pr-5 pl-5 pt-5 ">
+            <div class="row justify-content-center">
+                <!-- NOVIDADES -->
+                <div class="container col-3  pt-3 pb-5 text-left w-auto m-1 animacao2">
+                        <div class="tittle-header couro">
+                            <span><img src="img/feed.svg" class="img-fluid mr-2" style="filter: invert(100%)"><strong>Novidades</strong></span>
+                        </div>
+                        <ul class="list-group list-group-flush p-4 ">
+                            <li class="list-group-item">
+                                <a href="https://drive.google.com/file/d/1PiNyQnH51gHwoPKsNLvXzx52HO7I7Jud/view?usp=sharing" target="_blank"><h6>Baixe o template do Banner agora</h6></a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="/resultado-dos-trabalhos"><h6>Resultado dos Trabalhos Aprovados para I SERCOMP</h6></a>
+                                </li>
+                        </ul>
+                    </div>
+
+                <!-- Datas inportantes -->
+                <div class="container col-3  pt-3 pb-5 text-left w-auto m-1 animacao2">
+                    <div class="tittle-header couro">
+                        <span><img src="img/evento.svg" class="img-fluid mr-2" style="filter: invert(100%)"><strong>Datas
+                                importantes</strong></span>
+                    </div>
+                    <ul class="list-group list-group-flush p-4 ">
+                        <li class="list-group-item">
+                            <h6>10/NOV - Notificação dos autores dos artigos aprovados</h6>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>17/NOV - Entrega da versão final dos artigos</h6>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>22/NOV - Apresentação dos artigos</h6>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Instagram -->
+                <div class="container col-3  pt-3 pb-5 text-left w-auto m-1 animacao2">
+                    <div class="tittle-header couro">
+                        <span><img src="img/instagram.svg" height="24px" class=" mr-2" style="filter: invert(100%)"><strong>Instagram</strong></span>
+                    </div>
+                    <div class="p-4 ">
+                        <!-- InstaWidget -->
+                        <a href="https://instawidget.net/v/user/sercomppb" id="link-092494cf566c84b4e8db792249bd8aebb2793dadf21af9db956b5547c40581f2">@sercomppb</a>
+                        <script src="https://instawidget.net/js/instawidget.js?u=092494cf566c84b4e8db792249bd8aebb2793dadf21af9db956b5547c40581f2&width=250px"></script>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--CONTATO-->
+        <section class="pr-5 pl-5 pt-5 couro" id="contato">
+
+            <div class="container ">
+                <div class="row justify-content-center pt-5 pb-5 text-left w-100 m-1 animacao">
+                    <div class="col-5 card">
+                        <div class="tittle-header text-left pl-5 pt-4">
+                            <span class="row">
+                                <h2> <img src="img/support.svg" class="mr-2"><strong class="text-couro">
+                                        Fale com a gente!</strong></h2>
+                            </span>
+                        </div>
+                        <div class="text-light pr-5 pl-5">
+                            <span class=" text-dark">
+                                <img src="img/email.svg" height="50px">
+                                <h3>Pode ser por email?</h3>
+                                <a href="mailto:sercompeupb@gmail.com?Subject=Enviado%20do%20site" height="20">
+                                    <h5>sercompeupb@gmail.com</h5>
+                                </a>
+                            </span>
+                            <span class="text-dark">
+                                <br>
+                                <img src="img/instagram.svg" height="50px">
+                                <h3>ou prefere mandar um direct?</h3>
+                                <a href="https://www.instagram.com/sercomppb/">
+                                    <h5>Vem de direct!</h5>
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="tittle-header text-left pl-5 pt-0">
+                            <span class="row">
+                                <h2> <img src="img/lugar.svg" style="filter: invert(100%)" class="mr-2"><strong>Local</strong></h2>
+                            </span>
+                        </div>
+                        <div class="text-light pr-5 pl-5">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5600.12628974348!2d-37.26391612846536!3d-7.022534608376401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7af6052075b23c5%3A0xe15d227349b86bd4!2sUEPB+-+Campus+VII!5e0!3m2!1spt-BR!2sbr!4v1537636678307"
+                                width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--Programação-->
+        <section class="pr-5 pl-5 pt-5" id="programacao">
+            <div class=" row justify-content-center">
+
+                <div class="container">
+                    <div class="row justify-content-center pt-3 text-left m-1 w-100">
+                        <div class="tittle-header">
+                            <span class="row  animacao2"><img src="img/programacao.svg" height="50px">
+                                <h2><strong class="align-baseline text-dark">Programação</strong></h2>
+                            </span>
+
+                        </div>
+                        <table class="table table-borderless table-responsive table-hover col-4 animacao2">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h2><Strong class="text-couro">Dia 21.Nov</Strong></h2>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><strong class="mr-2">18:00 - 19:00</strong>
+                                        <h6>Credenciamento</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">19:00 - 19:15</strong>
+                                        <h6>Cerimonial de Abertura</h6>
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <th><strong class="mr-2">19:15 - 20:45</strong>
+                                        <h6>Palestra I</h6>
+                                        <p><small>Perspectivas e Desafios de criação de StartUps no ramo de tecnologia
+                                                no
+                                                sertão</small></p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">20:45 - 22:00</strong>
+                                        <h6>Coffee Break/Apresentação Cultural I</h6>
+                                    </th>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <table class="table table-borderless table-responsive table-hover col-4 animacao2">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h2><Strong class="text-couro">Dia 22.Nov</Strong></h2>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><strong class="mr-2">07:00 - 08:00</strong>
+                                        <h6>Credenciamento</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">08:00 - 09:30</strong>
+                                        <h6>Palestra II</h6>
+                                        <p><small>Como a Ciência da Computação pode contribuir para o desenvolvimento
+                                                regional?</small></p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">09:30 - 11:30</strong>
+                                        <h6>Minicursos</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">11:30 - 14:00</strong>
+                                        <h6>Intervalo</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">14:00 - 16:00</strong>
+                                        <h6>Oficinas</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">16:00 - 17:00</strong>
+                                        <h6>Apresentação de artigos em banner</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">17:00 - 18:00</strong>
+                                        <h6>Intervalo</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">18:00 - 19:00</strong>
+                                        <h6>Credenciamento</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">19:00 - 21:00</strong>
+                                        <h6>Mesa redonda</h6>
+                                        <p><small> Proposta de soluções tecnológicas sustentáveis para o sertão.
+                                            </small></p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">21:00 - 21:15</strong>
+                                        <h6>Sorteio do tema do Hackday</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">21:15 - 21:30</strong>
+                                        <h6>Coffee Break/Apresentação Cultural II</h6>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table table-borderless table-responsive table-hover col-4 animacao2">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h2><Strong class="text-couro">Dia 23.Nov</Strong></h2>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><strong class="mr-2">08:00 - 08:15</strong>
+                                        <h6>Hackday (Abertura)</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">08:15 - 11:30</strong>
+                                        <h6>Hackday (Desenvolvimento)</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">11:30 - 13:00</strong>
+                                        <h6>Intervalo</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">13:00 - 17:00</strong>
+                                        <h6>Hackday (Desenvolvimento)</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">17:00 - 18:00</strong>
+                                        <h6>Intervalo</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">18:00 - 19:00</strong>
+                                        <h6>Hackday (Apresentação/Avaliação)</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">19:00 - 19:15</strong>
+                                        <h6>Premiação dos Artigos</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">19:15 - 19:30</strong>
+                                        <h6>Premiação do Hackday / Enceramento do Evento</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><strong class="mr-2">19:30 - 22:00</strong>
+                                        <h6>Noite Nerd</h6>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer>
+            <p class="m-5 p-0 text-center"><small class="text-black text-center bg-light">Devloops &copy;2018 -
+                    Contato:+55 83 9 9976 4684</small></p>
+        </footer>
+        <span class="fixed-bottom ml-5 mb-3" style="height: 70px; width: 200px">
+            <img src="img/devloops-icone.png" class="m-0 p-0" width="50">
+        </span>
+
+    </div>
+
+
+
+
+</body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/appScripts.js"></script>
+
+</html>

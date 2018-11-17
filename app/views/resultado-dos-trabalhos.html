@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>1º SERCOMP - UEPB</title>
+    <meta name="keywords" content="Computação, Inovação, Pesquisa em Computação, Computação contextualizada, Congresso, Paraiba, Patos-PB" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/appScripts.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var ua = navigator.userAgent.toLowerCase();
+            var uMobile = '';
+            // === REDIRECIONAMENTO PARA iPhone, Windows Phone, Android, etc. ===
+            // Lista de substrings a procurar para ser identificado como mobile WAP
+            uMobile = '';
+            uMobile += 'iphone;ipod;windows phone;android;iemobile 8';
+            // Sapara os itens individualmente em um array
+            v_uMobile = uMobile.split(';');
+            // percorre todos os itens verificando se eh mobile
+            var boolMovel = false;
+            for (i = 0; i <= v_uMobile.length; i++) {
+                if (ua.indexOf(v_uMobile[i]) != -1) {
+                    boolMovel = true;
+                }
+            }
+            if (boolMovel == true) {
+                location.href = '/resultado-dos-trabalhos-mobile';
+            }
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92283889-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92283889-4');
+    </script>
+</head>
+
+<body class="">
+
+    <!--NAVEGADOR-->
+    <div class="fixed-top couro">
+        <nav class="nav float-left pl-5 pt-4 w-75 navegacao">
+            <span><img src="img/simbolo.png" height="60px"></span>
+            <li class="nav-item">
+                <a class="nav-link active text-light" href="/index">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/home.svg">
+                    Inicio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/inscricao-evento">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/inscreverse.svg">
+                    Inscrição
+                </a>
+            </li>
+            <li>
+                <a class="nav-link text-light" href="/chamada-trabalhos">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/anexar.svg">
+                    Submissão
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/hackton">
+                    <img class="img-fluid mr-2" style="filter: invert(100%)" src="img/hackday.svg">
+                    Hackday
+                </a>
+            </li>
+        </nav>
+        <div class="float-right pr-5 pt-4 w-25 navegacao ">
+            <div class="float-right">
+                <!--<span class="ml-3"><a href=""><img src="img/facebook.svg" style="filter: invert(100%)" height="20"></a></span>-->
+                <span class="ml-3"><a href="https://www.instagram.com/sercomppb/"><img src="img/instagram.svg" style="filter: invert(100%)"
+                            height="20"></a></span>
+                <span class="ml-3"><a href="mailto:sercompeupb@gmail.com?Subject=Enviado%20do%20site" style="filter: invert(100%)"
+                        height="20"><img src="img/email.svg"></a></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Conteudo-->
+    <div id="conteudo" style="padding-top: 100px">
+        <div class="pr-5 pl-5 mr-5 ml-5 pt-3">
+            <h2><strong>Resultado dos Trabalhos</strong></h2>
+
+            <p>
+                Prezado participante,
+                <br>
+                Manifestamos nosso agradecimento por sua inscrição e participação no I SERCOMP sem a qual a realização
+                deste evento não seria possível. Aproveitamos para informar que a lista de trabalhos aprovados se
+                encontra abaixo:
+            </p>
+            <ul>
+                <li>Concepção de uma Abordagem Educacional de Combate ao Cyberbullying </li>
+                <li>Smart control center: Gerenciamento da Climatizaçao em uma Sala de Servidores Usando Protocolo CoAP</li>
+                <li>Transmissão de Vídeo em Tempo Real Utilizando o Protocolo RTSP na Raspberry Pi</li>
+                <li>Estudo de Caso sobre sistemas computacionais distribuídos e o projeto seti at home</li>
+                <li>O Pensamento Computacional no Ensino Fundamental: um relato de experiência na rede pública de
+                    ensino</li>
+                <li>Investigando a Aplicação de Metodologias Ágeis em desenvolvimento de Softwares por Empresas
+                    localizadas no Sertão Paraibano</li>
+                <li>Uma Proposta de Abordagem para Promover Segurança da Informação no Marketing Digital com CAPTCHA
+                    Clicáveis</li>
+                <li>Desenvolvimento de um Algoritmo baseado em técnicas de Inteligência Artificial para o Jogo Batalha
+                    Naval</li>
+                <li>Melhorias em Projetos Ágeis com Big Data e Experiência do Usuário</li>
+                <li>Discord, Ferramenta de Transmissão de Áudio e Vídeo em Tempo Real para a Realização de Monitoria a
+                    Distância</li>
+                <li>Metodologias Ativas e Gamificação como auxílio ao ensino de Algoritmos </li>
+
+            </ul>
+            <br>
+            <p class="text-justify">
+                O resultado das avaliações detalhadas dos trabalhos e a carta de aceite para os trabalhos aprovados
+                foram enviados por e-mail. Leia com atenção as observações feitas. Se solicitadas correções, é
+                necessário seguir as recomendações da comissão avaliadora e nos enviar até dia 17 de novembro a versão
+                final do seu trabalho.
+            </p>
+            <p class="text-justify">
+                É hora de organizar o banner de acordo com o modelo fornecido no site. Aos que não tiveram seus
+                trabalhos aprovados para a atual edição do SERCOMP, solicitamos que observem os aspectos pontuados nas
+                fichas de avaliação, qualificando a produção nos aspectos solicitados para posterior submissão ao II
+                SERCOMP ou a outros eventos da área de computação. Contamos com sua fundamental presença e participação
+                para brilhantar o I SERCOMP.
+            </p>
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <p class="mr-5 ml-5 p-0 text-center"><img src="img/devloops-icone.png" class="m-1 p-0" width="50"><small class="text-black text-center">Develoops
+                &copy;2018 -
+                Contato:+55 83 9 9976 4684</small></p>
+    </footer>
+
+
+</body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/appScripts.js"></script>
+
+</html>
