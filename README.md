@@ -1,4 +1,4 @@
-# Name: Project Sercomp2018
+# Name: Sercomp2018
 
 Project developed for managing events for the Universidade Estadual da Paraiba(UEPB) Campos Patos.
 
@@ -18,12 +18,12 @@ resources used:
 * nodemailer
 ________________________________________________________________________________________________________________________________
 
-# Nome: Projeto Sercomp2019
+# Nome: Sercomp2018
 
 Projeto desenvolvido para gerenciamento de inscrições em eventos publicos para Universidade estaudal da Paraiba Campos Patos.
 
 Resumo:
-Projeto utilizado no sercomp 2019 para dispositivos desktop e mobile com as seguintes funções
+Projeto utilizado no sercomp 2018 para dispositivos desktop e mobile com as seguintes funções
 Cadastro de Usuario;
 Cadastro de Mini-curso;
 Tela de acompanhamento de inscrições;
